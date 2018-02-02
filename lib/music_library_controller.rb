@@ -16,7 +16,6 @@ class MusicLibraryController
       puts "To quit, type 'exit'."
       puts "What would you like to do?"
       choice = gets.chomp
-      binding.pry
     end
   end
 
