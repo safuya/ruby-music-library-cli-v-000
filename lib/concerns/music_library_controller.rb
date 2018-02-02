@@ -67,6 +67,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     song_no = gets.to_i
     song = sorted_songs[song_no - 1]
+    binding.pry
     puts "Playing #{song.name} by #{song.artist.name}"
   end
 
