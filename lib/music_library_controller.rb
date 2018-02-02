@@ -18,7 +18,7 @@ class MusicLibraryController
       choice = gets.chomp
       list_songs if choice == "list songs"
       list_artists if choice == "list artists"
-      list_genres if choice == "list_genres"
+      list_genres if choice == "list genres"
     end
   end
 
