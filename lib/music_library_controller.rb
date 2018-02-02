@@ -21,6 +21,7 @@ class MusicLibraryController
       list_genres if choice == "list genres"
       list_songs_by_artist if choice == "list artist"
       list_songs_by_genre if choice == "list genre"
+      play_song if choice == "play song"
     end
   end
 
