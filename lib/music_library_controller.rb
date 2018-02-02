@@ -17,6 +17,7 @@ class MusicLibraryController
       puts "What would you like to do?"
       choice = gets.chomp
       list_songs if choice == "list songs"
+      list_artists if choice == "list artists"
     end
   end
 
