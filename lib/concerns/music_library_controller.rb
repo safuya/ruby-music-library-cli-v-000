@@ -19,6 +19,10 @@ class MusicLibraryController
     end
   end
 
+  def sorted_songs
+    Song.all.sort { |a, b| a.name <=> b.name }
+  end
+
   def list_songs
     Song.all.sort { |a, b| a.name <=> b.name }.each_with_index do |song, i|
       puts "#{i + 1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
@@ -62,6 +66,7 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     song_no = gets
+    Song.all.sort { |a, b| a.name <=> b.name }
   end
 
 end
