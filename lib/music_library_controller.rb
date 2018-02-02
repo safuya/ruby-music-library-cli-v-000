@@ -19,6 +19,7 @@ class MusicLibraryController
       list_songs if choice == "list songs"
       list_artists if choice == "list artists"
       list_genres if choice == "list genres"
+      list_songs_by_artist if choice == "list artist"
     end
   end
 
